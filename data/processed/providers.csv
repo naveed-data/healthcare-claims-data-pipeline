@@ -1,0 +1,101 @@
+provider_id,provider_name,specialty,state
+PR0001,Simmons PLC,Dermatology,GA
+PR0002,Green-Herrera,Dermatology,AZ
+PR0003,"Diaz, Hill and Becker",Orthopedics,GA
+PR0004,Gutierrez PLC,Dermatology,IL
+PR0005,White-Hansen,Primary Care,TX
+PR0006,King-Parker,Orthopedics,FL
+PR0007,Schroeder-Sanders,Cardiology,IL
+PR0008,Wyatt Ltd,Cardiology,AZ
+PR0009,Adkins Group,Neurology,GA
+PR0010,"Avery, Garcia and Romero",Neurology,FL
+PR0011,Owen-Mendez,Primary Care,CA
+PR0012,"Mann, Martin and Oconnell",Primary Care,FL
+PR0013,Brock and Sons,Orthopedics,TX
+PR0014,Frost-Graham,Primary Care,WA
+PR0015,Baker LLC,Orthopedics,NY
+PR0016,Lynch Ltd,Primary Care,FL
+PR0017,Arias-Morales,Neurology,GA
+PR0018,"Meyer, Dawson and Harper",Orthopedics,TX
+PR0019,Bowman Group,Orthopedics,NY
+PR0020,Harris Ltd,Neurology,FL
+PR0021,"Mitchell, Johnson and Greene",Dermatology,IL
+PR0022,"Hale, Gilbert and Craig",Primary Care,AZ
+PR0023,Allen-Smith,Cardiology,CA
+PR0024,Miller LLC,Cardiology,FL
+PR0025,Gomez-Foster,Neurology,FL
+PR0026,"Gonzalez, Smith and Padilla",Cardiology,AZ
+PR0027,Dunn Ltd,Cardiology,GA
+PR0028,"Herman, Bailey and Richmond",Neurology,FL
+PR0029,Perez-Mccarty,Primary Care,GA
+PR0030,Spears-Andrews,Primary Care,GA
+PR0031,Thompson-Hunter,Cardiology,TX
+PR0032,"Jones, Phillips and Arroyo",Primary Care,NY
+PR0033,"Frye, Walter and Li",Cardiology,GA
+PR0034,"Wright, Ramos and Bennett",Cardiology,GA
+PR0035,Carrillo-Todd,Dermatology,CA
+PR0036,Maldonado-Mosley,Orthopedics,IL
+PR0037,Olson LLC,Orthopedics,NY
+PR0038,Reyes and Sons,Primary Care,WA
+PR0039,"Haynes, Mcbride and Gutierrez",Dermatology,GA
+PR0040,Black-Smith,Primary Care,GA
+PR0041,Wright-Davis,Primary Care,NY
+PR0042,"Goodman, Peterson and Spencer",Dermatology,IL
+PR0043,Woods LLC,Orthopedics,NY
+PR0044,Shannon LLC,Primary Care,TX
+PR0045,Valentine Ltd,Neurology,WA
+PR0046,Porter and Sons,Neurology,TX
+PR0047,Moss LLC,Primary Care,GA
+PR0048,Perez and Sons,Neurology,FL
+PR0049,"Kelly, Maxwell and Wilson",Neurology,CA
+PR0050,Lowe Ltd,Dermatology,NY
+PR0051,Austin-Duran,Orthopedics,CA
+PR0052,"Rubio, Charles and Watson",Primary Care,GA
+PR0053,Vasquez-Galloway,Orthopedics,NY
+PR0054,"Melton, Henry and Joyce",Cardiology,GA
+PR0055,"Ramirez, Walker and Ray",Dermatology,TX
+PR0056,Fox Group,Orthopedics,FL
+PR0057,Ayers-Johnson,Primary Care,CA
+PR0058,Long-Parks,Orthopedics,IL
+PR0059,Bryant Inc,Cardiology,TX
+PR0060,"Holmes, Stewart and Smith",Cardiology,WA
+PR0061,"Clark, Carpenter and Nguyen",Dermatology,WA
+PR0062,"Hensley, Lopez and Baker",Primary Care,WA
+PR0063,Ruiz-Austin,Dermatology,WA
+PR0064,White-Coleman,Orthopedics,WA
+PR0065,Haynes-Watson,Cardiology,AZ
+PR0066,Ramirez-White,Neurology,FL
+PR0067,Krause Ltd,Primary Care,AZ
+PR0068,Olsen Ltd,Cardiology,TX
+PR0069,Brock-Peters,Orthopedics,TX
+PR0070,Gonzalez-Marsh,Orthopedics,IL
+PR0071,"Hernandez, Shaffer and Thompson",Cardiology,CA
+PR0072,Taylor-Barry,Orthopedics,NY
+PR0073,"Holmes, Le and Floyd",Dermatology,NY
+PR0074,King-Garrison,Cardiology,CA
+PR0075,Ross Ltd,Orthopedics,AZ
+PR0076,Brown LLC,Cardiology,WA
+PR0077,Combs-Davis,Primary Care,WA
+PR0078,"Cook, Ward and Castro",Primary Care,TX
+PR0079,Cooper-Jenkins,Cardiology,GA
+PR0080,Dillon-Mccarty,Primary Care,FL
+PR0081,Ray Ltd,Dermatology,IL
+PR0082,"Ryan, Krause and Mitchell",Orthopedics,IL
+PR0083,Nunez-Freeman,Primary Care,CA
+PR0084,"Griffin, Miller and Austin",Cardiology,WA
+PR0085,Welch-Thomas,Neurology,AZ
+PR0086,Davidson LLC,Primary Care,TX
+PR0087,Welch-Duncan,Orthopedics,TX
+PR0088,Miller LLC,Dermatology,CA
+PR0089,Edwards Ltd,Orthopedics,AZ
+PR0090,Page-Jacobs,Primary Care,CA
+PR0091,Nelson-Wallace,Cardiology,FL
+PR0092,Adkins-Meyer,Primary Care,IL
+PR0093,Gutierrez-White,Cardiology,AZ
+PR0094,Martinez and Sons,Cardiology,IL
+PR0095,"King, Manning and Brady",Dermatology,AZ
+PR0096,Jackson Inc,Dermatology,IL
+PR0097,Brown Group,Cardiology,WA
+PR0098,"Brown, Wise and Warren",Primary Care,GA
+PR0099,Garcia PLC,Dermatology,GA
+PR0100,Miller Group,Primary Care,AZ
