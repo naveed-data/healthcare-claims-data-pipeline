@@ -1,33 +1,53 @@
-import pandas as pd
+import psycopg2
 from pathlib import Path
-from sqlalchemy import create_engine
 
 CLEAN_PATH = Path("data/clean")
 
-DB_USER = "postgres"
-DB_PASSWORD = "postgres"
-DB_HOST = "localhost"
-DB_PORT = "5432"
-DB_NAME = "healthcare_claims"
-
-engine = create_engine(
-    f"postgresql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
-)
+DB_CONFIG = {
+    "dbname": "healthcare_claims",
+    "user": "postgres",
+    "password": "postgres",
+    "host": "localhost",
+    "port": "5432",
+}
 
 tables = {
     "dim_patients": "dim_patients.csv",
     "dim_providers": "dim_providers.csv",
-    "fact_claims": "fact_claims.csv"
+    "fact_claims": "fact_claims.csv",
 }
+
+
+def load_csv_to_postgres(table_name, file_name):
+    file_path = CLEAN_PATH / file_name
+
+    conn = psycopg2.connect(**DB_CONFIG)
+    cursor = conn.cursor()
+
+    cursor.execute(f"DROP TABLE IF EXISTS {table_name} CASCADE;")
+
+    with open(file_path, "r") as f:
+        header = f.readline().strip().split(",")
+
+    columns = ", ".join([f'"{col}" TEXT' for col in header])
+    cursor.execute(f'CREATE TABLE {table_name} ({columns});')
+
+    with open(file_path, "r") as f:
+        cursor.copy_expert(
+            f"COPY {table_name} FROM STDIN WITH CSV HEADER",
+            f
+        )
+
+    conn.commit()
+    cursor.close()
+    conn.close()
+
+    print(f"Loaded {file_name} into {table_name}")
 
 
 def main():
     for table_name, file_name in tables.items():
-        file_path = CLEAN_PATH / file_name
-        df = pd.read_csv(file_path)
-
-        df.to_sql(table_name, engine, if_exists="replace", index=False)
-        print(f"Loaded {len(df)} rows into {table_name}")
+        load_csv_to_postgres(table_name, file_name)
 
     print("Data loaded into PostgreSQL successfully.")
 
