@@ -125,3 +125,97 @@ dbt transforms raw warehouse tables into analytics-ready models and validates da
 7. Visualize business insights in Power BI
 
 ---
+
+# 📂 Project Structure
+
+```
+healthcare-claims-data-pipeline/
+│
+├── dags/                      # Apache Airflow DAGs
+├── data/                      # Raw and processed datasets
+├── healthcare_claims_dbt/     # dbt project
+├── scripts/                   # Python ETL scripts
+├── docs/
+│   └── images/                # Project screenshots
+├── README.md
+├── docker-compose.yml
+└── requirements.txt
+```
+
+---
+
+# 🚀 How to Run the Project
+
+### Clone the repository
+
+```bash
+git clone https://github.com/<your-username>/healthcare-claims-data-pipeline.git
+```
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Start Docker
+
+```bash
+docker compose up -d
+```
+
+### Run Airflow
+
+```bash
+airflow standalone
+```
+
+### Run dbt
+
+```bash
+cd healthcare_claims_dbt
+
+dbt run
+
+dbt test
+```
+
+### Open Power BI
+
+Connect Power BI to PostgreSQL and refresh the dashboard.
+
+---
+
+# 📈 Dashboard Highlights
+
+The dashboard provides insights into:
+
+- Total Claims Processed
+- Total Claim Amount
+- Total Paid Amount
+- Denied Claims
+- Denial Rate
+- Top Providers by Claim Amount
+- Monthly Claim Trends
+- Provider Performance
+- Claims by Status
+
+---
+
+# 🔮 Future Enhancements
+
+- Real-time streaming with Apache Kafka
+- Spark Structured Streaming
+- Cloud deployment on AWS/Azure
+- CI/CD with GitHub Actions
+- Data quality monitoring
+- Automated dashboard refresh
+- Role-based access control
+
+---
+
+# 👨‍💻 Author
+
+**Naveed Shaik**
+
+If you found this project helpful, feel free to ⭐ the repository.
