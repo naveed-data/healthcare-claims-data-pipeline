@@ -59,6 +59,15 @@ Power BI Dashboard
 
 ---
 
+## 📊 Live Dashboard
+
+Explore the interactive Power BI dashboard here:
+
+**🔗 Power BI Dashboard:**  
+https://your-powerbi-link
+
+---
+
 # 📊 Dashboard Preview
 
 The Power BI dashboard provides executive-level insights into healthcare claims processing, provider performance, financial metrics, and claim trends.
