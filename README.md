@@ -64,7 +64,7 @@ Power BI Dashboard
 Explore the interactive Power BI dashboard here:
 
 **🔗 Power BI Dashboard:**  
-https://your-powerbi-link
+https://app.powerbi.com/view?r=eyJrIjoiNGJlNDUxOTItNTNmNS00YWQyLTk0YTQtY2I1NmNlMGNhYzQ2IiwidCI6IjcwZGUxOTkyLTA3YzYtNDgwZi1hMzE4LWExYWZjYmEwMzk4MyIsImMiOjN9
 
 ---
 
