@@ -1,0 +1,5 @@
+payer_type,total_claims,denied_claims,denial_rate
+Self-Pay,1222,402,32.9
+Medicare,1270,433,34.09
+Medicaid,1301,423,32.51
+Commercial,1207,419,34.71
