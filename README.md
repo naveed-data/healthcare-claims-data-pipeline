@@ -1,67 +1,127 @@
-# Healthcare Claims Data Engineering Pipeline
+# 🏥 Healthcare Claims Analytics Pipeline
 
-End-to-end healthcare claims analytics pipeline built with Python, PySpark, PostgreSQL, dbt, Airflow, Docker, and SQL.
+> End-to-End Data Engineering Project using **Python, PySpark, PostgreSQL, dbt, Apache Airflow, Docker, and Power BI**
 
-## Project Overview
+## 📌 Project Overview
 
-This project demonstrates a production-style data engineering workflow for healthcare claims analytics. It generates realistic patient, provider, and claims data, ingests and cleans the data, transforms it using PySpark, loads it into PostgreSQL, builds dbt models and tests, orchestrates the pipeline with Airflow, and exports dashboard-ready analytics datasets.
+This project demonstrates an end-to-end healthcare data engineering pipeline that automates the ingestion, transformation, validation, storage, orchestration, and visualization of healthcare claims data.
 
-## Architecture
+The pipeline processes raw healthcare claims into analytics-ready datasets, enabling business users to monitor claim volumes, provider performance, payer denial rates, and financial metrics through interactive Power BI dashboards.
 
-Raw Healthcare Data  
-→ Python Ingestion  
-→ PySpark ETL  
-→ PostgreSQL Warehouse  
-→ dbt Staging & Mart Models  
-→ dbt Tests  
-→ Airflow Orchestration  
-→ Dashboard Exports
+---
 
-## Tech Stack
+## 🎯 Business Problem
 
-Python, Pandas, PySpark, PostgreSQL, dbt, Airflow, Docker, SQL, Git, GitHub
+Healthcare organizations process thousands of insurance claims every day. Raw claims data often requires cleaning, transformation, and validation before it can be used for reporting and business intelligence.
 
-## Key Features
+This project automates that workflow by creating a scalable analytics pipeline from raw data ingestion to executive dashboards.
 
-- Generated 5,000+ healthcare claims records with patient and provider data
-- Built Python ingestion and validation workflows
-- Developed PySpark ETL pipeline for cleaning and transformation
-- Loaded cleaned data into PostgreSQL using psycopg2
-- Created dbt staging and mart models for healthcare analytics
-- Added dbt tests for uniqueness and not-null validation
-- Orchestrated the full pipeline using Apache Airflow
-- Exported dashboard-ready CSV files for reporting
+---
 
-## dbt Models
+## 🏗️ Solution Architecture
 
-- stg_claims
-- stg_patients
-- stg_providers
-- mart_monthly_claims
-- mart_payer_denial_rate
-- mart_provider_performance
-
-## Business Insights
-
-This project supports analysis of:
-
-- Monthly claims trends
-- Claim denial rates by payer
-- Provider performance
-- Total billed amount
-- Total paid amount
-- Average claim amount
-
-## How to Run
-
-```bash
-python scripts/generate_sample_data.py
-python scripts/ingest_data.py
-python spark/claims_etl_spark.py
-python scripts/load_to_postgres.py
-cd healthcare_claims_dbt
-dbt run
-dbt test
-cd ..
-python scripts/export_dashboard_data.py
 ```
+Raw Healthcare Data
+        │
+        ▼
+Python Data Generator
+        │
+        ▼
+PySpark ETL
+        │
+        ▼
+PostgreSQL Data Warehouse
+        │
+        ▼
+dbt Data Models
+        │
+        ▼
+Apache Airflow
+        │
+        ▼
+Power BI Dashboard
+```
+
+---
+
+## ⚙️ Technology Stack
+
+| Category         | Technologies   |
+| ---------------- | -------------- |
+| Programming      | Python, SQL    |
+| Big Data         | PySpark        |
+| Database         | PostgreSQL     |
+| Data Modeling    | dbt            |
+| Orchestration    | Apache Airflow |
+| Visualization    | Power BI, DAX  |
+| Version Control  | Git, GitHub    |
+| Containerization | Docker         |
+
+---
+
+# 📊 Dashboard Preview
+
+The Power BI dashboard provides executive-level insights into healthcare claims processing, provider performance, financial metrics, and claim trends.
+
+## Dashboard
+
+![Healthcare Dashboard](docs/images/dashboard.png)
+
+---
+
+## Power BI Data Model
+
+The dashboard is built on a relational data model connecting fact and dimension tables to support efficient reporting and analytics.
+
+![Power BI Model](docs/images/powerbi_model.png)
+
+---
+
+# 🔄 Pipeline Orchestration
+
+Apache Airflow automates the complete workflow, ensuring each stage executes in the correct sequence.
+
+### Airflow DAG
+
+![Airflow DAG](docs/images/airflow_graph.png)
+
+---
+
+# 📈 dbt Data Lineage
+
+dbt transforms raw warehouse tables into analytics-ready models and validates data quality using automated tests.
+
+### dbt Lineage Graph
+
+![dbt Lineage](docs/images/dbt_lineage.png)
+
+---
+
+# 🚀 Key Features
+
+- End-to-end healthcare claims analytics pipeline
+- Automated ETL using Python and PySpark
+- PostgreSQL data warehouse with dimensional modeling
+- dbt staging and mart models
+- Automated data quality testing with dbt
+- Apache Airflow workflow orchestration
+- Interactive Power BI dashboard
+- KPI monitoring for healthcare operations
+- Provider performance analysis
+- Claim denial rate reporting
+- Monthly claims trend analysis
+- Docker-based local development environment
+
+---
+
+# 🔄 Pipeline Workflow
+
+1. Generate healthcare claims, patient, and provider datasets
+2. Clean and transform raw data using PySpark
+3. Load processed data into PostgreSQL
+4. Build analytics-ready models with dbt
+5. Validate data quality using dbt tests
+6. Schedule and orchestrate the workflow using Apache Airflow
+7. Visualize business insights in Power BI
+
+---
